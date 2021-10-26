@@ -1,58 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
-    <title>Medication</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./2nd-page-assets/meds-style.css" />
+  <link href="./2nd-page-assets/images/red-pill.jpg" />
+  <title>Medication</title>
 </head>
+
 <body>
-    - <section class="section">
-        <nav class="navbar" role="navigation" aria-label="main navigation">
-            <div class="navbar-brand">
-              <a class="navbar-item" href="/index.html" target="blank_">
-                <h1 class="title is-1 has-text-primary">AL-Together</h1>
+  <!-- header area "med schedule"-->
+  <header class="jumbotron">
+    <h1 class="display-3 has-text-black">Medication Schedule</h1>
+    <h1 class="title is-1 has-text-primary">AL-Together</h1>
+
+    <!--<section class="section"-->
+    <nav class="navbar has-background-primary" role="navigation" aria-label="main navigation">
+      <div class="navbar-brand">
+        <a class="navbar-item" href="/index.html" target="blank_">
+
+        </a>
+
+        <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </a>
+      </div>
+
+      <div id="navbarBasicExample" class="navbar-menu">
+        <div class="navbar-start">
+          <a class="navbar-item has-text-white has-text-weight-bold " href="https://facebook.com" target="blank_">
+            Facebook
+          </a>
+
+          <a class="navbar-item has-text-white has-text-weight-bold " href="https://google.com" target="blank_">
+            Google
+          </a>
+
+          <div class="navbar-item has-dropdown is-hoverable ">
+            <a class="navbar-link has-text-white has-text-weight-bold ">
+              More socials
+            </a>
+
+            <div class="navbar-dropdown">
+              <a class="navbar-item" href="https:youtube.com" target="blank_">
+                YouTube
               </a>
-          
-              <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
-                <span aria-hidden="true"></span>
-                <span aria-hidden="true"></span>
-                <span aria-hidden="true"></span>
+              <a class="navbar-item" href="https://instagram.com" target="blank_">
+                Instagram
+              </a>
+              <a class="navbar-item" href="https://npr.org" target="blank_">
+                News
+              </a>
+              <hr class="navbar-divider">
+              <a class="navbar-item" href="https://youtu.be/dQw4w9WgXcQ" target="blank_">
+                Recipes
               </a>
             </div>
-          
-            <div id="navbarBasicExample" class="navbar-menu">
-              <div class="navbar-start">
-                <a class="navbar-item " href="https://facebook.com" target="blank_">
-                  Facebook
-                </a>
-          
-                <a class="navbar-item" href="https://google.com" target="blank_">
-                  Google
-                </a>
-          
-                <div class="navbar-item has-dropdown is-hoverable">
-                  <a class="navbar-link">
-                    More socials
-                  </a>
-          
-                  <div class="navbar-dropdown">
-                    <a class="navbar-item" href="https:youtube.com" target="blank_">
-                      YouTube
-                    </a>
-                    <a class="navbar-item" href="https://instagram.com" target="blank_">
-                      Instagram
-                    </a>
-                    <a class="navbar-item" href="https://npr.org" target="blank_">
-                      News
-                    </a>
-                    <hr class="navbar-divider">
-                    <a class="navbar-item" href="https://youtu.be/dQw4w9WgXcQ" target="blank_">
-                      Recipes
-                    </a>
-                  </div>
-                </div>
-              </div>
+          </div>
+
+        </div>
+
+        <h2 class="has-text-white has-text-weight-bold" id="date"></h2>
+        <p id="currentDay " class="lead "></p>
+  </header>
+  <div class="container">
+
+    <ul id="list">
+
+    </ul>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script src="./2nd-page-assets/meds.js">
+
+    </script>
 </body>
+<div>
+  <footer>
+
+  </footer>
+</div>
+
 </html>
