@@ -30,7 +30,7 @@ body {
 .row {
   white-space: pre-wrap;
   height: 80px;
-  border-top: 1px solid rgb(228, 219, 219);
+  border-top: 1px solid black;
   padding-top: 20px;
 }
 
@@ -38,8 +38,8 @@ body {
   border-left: 1px solid black;
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
-  background-color: #06aed5;
-  color: white;
+  background-color: hsl(171, 73%, 86%);
+  color: rgb(10, 0, 0);
 }
 
 .saveBtn i:hover {
