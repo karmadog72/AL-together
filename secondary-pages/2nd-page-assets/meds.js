@@ -1,7 +1,10 @@
 var today = moment().format("MMMM Do YYYY, h:mm:ss a");
 var displayDate = (document.getElementById("date").innerHTML = today);
-var hours = [9, 10, 11, 12, 1, 2, 3, 4, 5];
-var militaryHours = [9, 10, 11, 12, 13, 14, 15, 16, 17];
+var hours = [6, 7, 8, 8, 9, 10, 11, 12, 1, 2, 3, 4, 5, 6, 8, 9, 10, 11, 12];
+var militaryHours = [
+  0600, 0700, 0800, 0900, 1000, 1100, 1200, 1300, 1400, 1500, 1600, 1700, 1800,
+  1900, 2000, 2100, 2200, 2300,
+];
 
 // momentjs time code
 moment().format("MMMM Do YYYY, h:mm:ss a");

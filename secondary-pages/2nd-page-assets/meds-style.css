@@ -2,18 +2,18 @@ body {
   font-family: "Open Sans", sans-serif;
   font-size: 16px;
   line-height: 1;
-  background-color: rgba(241, 215, 224, 0.836);
+  background-color: hsl(171, 100%, 41%);
 }
 
-textarea {
+/* textarea {
   background: transparent;
   border: none;
   resize: none;
   color: #000000;
   border-left: 1px solid black;
   padding: 10px;
-}
-/* added image to jumbotron */
+} */
+/* added pill image to jumbotron */
 .jumbotron {
   text-align: center;
   background-image: url("../2nd-page-assets/images/red-pill.jpg");
@@ -27,37 +27,11 @@ textarea {
   white-space: normal;
 }
 
-.timeBlock {
-  text-align: center;
-  border-radius: 15px;
-}
-
 .row {
   white-space: pre-wrap;
   height: 80px;
   border-top: 1px solid rgb(228, 219, 219);
   padding-top: 20px;
-}
-
-.hour {
-  background-color: #ffffff;
-  color: #000000;
-  border-top: 1px dashed #000000;
-}
-/*  past, present, or future coloring  */
-.past {
-  background-color: #d3d3d3;
-  color: white;
-}
-
-.present {
-  background-color: #ff6961;
-  color: white;
-}
-
-.future {
-  background-color: #77dd77;
-  color: white;
 }
 
 .saveBtn {
