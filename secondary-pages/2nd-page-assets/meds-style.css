@@ -16,7 +16,7 @@ body {
 /* added pill image to jumbotron */
 .jumbotron {
   text-align: center;
-  background-image: url("../2nd-page-assets/images/red-pill.jpg");
+  background-image: url("../2nd-page-assets/images/floral-bg.jpg");
   background-size: cover;
   color: black;
   border-radius: 0;
