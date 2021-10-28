@@ -1,0 +1,57 @@
+body {
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  line-height: 1;
+  background-color: hsl(171, 100%, 41%);
+}
+
+/* textarea {
+  background: transparent;
+  border: none;
+  resize: none;
+  color: #000000;
+  border-left: 1px solid black;
+  padding: 10px;
+} */
+/* added pill image to jumbotron */
+.jumbotron {
+  text-align: center;
+  background-image: url("../2nd-page-assets/images/floral-bg.jpg");
+  background-size: cover;
+  color: black;
+  border-radius: 0;
+  border-bottom: 10px solid black;
+}
+
+.description {
+  white-space: normal;
+}
+
+.row {
+  white-space: pre-wrap;
+  height: 80px;
+  border-top: 1px solid black;
+  padding-top: 20px;
+}
+
+.saveBtn {
+  border-left: 1px solid black;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  background-color: hsl(171, 73%, 86%);
+  color: rgb(10, 0, 0);
+}
+
+.saveBtn i:hover {
+  font-size: 20px;
+  transition: all 0.3s ease-in-out;
+}
+
+footer {
+  background-color: white;
+
+  border-radius: 10;
+
+  margin-top: 30px;
+  width: 100%;
+}
