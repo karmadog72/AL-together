@@ -172,16 +172,21 @@
         </header>
         <div class="card-content">
           <div class="content">
-            <p class="pb-5">Is there anything that you need, Use the 'CLICK HERE!' link at the bottom for a list
-              of contacts and photos of who you'll be contacting today!!😊</p>
+            <p class="pb-5 has-text-centered">CHECK YOUR CITY'S DAILY COVID-19 FORECAST</p>
             <img alt="rona-icon" src="./2nd-page-assets/images/rona-icon.png">
-            <footer class="card-footer">
-              <p class="card-footer-item">
-                <span>
-                  <a href="./secondary-pages/hygiene.html">CLICK HERE!</a>
-                </span>
-              </p>
-            </footer>
+            <section class="section is-size-4">
+              <h1 id="unitedStates" style="color: black;"></h1>
+              <h3 id="newConfirmed" style="color: black;"></h3>
+              <h3 id=newRecovered" style="color: black;"></h3>
+              <h3 id="totalDeaths" style="color: black;"></h3>
+              <div class="card">
+                <h3 class="card-header is-size-4">Search By City</h3>
+                <form class="card-body">
+                  <label class="form-label"></label>
+                  <input id="cityname" type="text" autofocus="true" class="form-input" />
+                  <button type="submit" id="search-btn">Search</button>
+              </div>
+            </section>
           </div>
 
           <ul id="list">
@@ -189,6 +194,7 @@
           </ul>
           <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
           <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+          <script src=""></script>
           <script src="./2nd-page-assets/meds.js">
 
           </script>
