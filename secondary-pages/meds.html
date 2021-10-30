@@ -6,7 +6,6 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
     integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
   <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet" />
@@ -20,7 +19,7 @@
   <header class="jumbotron">
     <h1 class="title is-1 has-text-primary">AL-Together</h1>
     <img alt="red-pill" src="./2nd-page-assets/images/red-pill.jpg">
-    <h1 class="display-3 has-text-black">💊 Medication Schedule 💉</h1>
+    <h1 class="is-size-1 has-text-black has-text-weight-bold">Medication Schedule</h1>
 
 
     <!--<section class="section"-->
@@ -84,19 +83,128 @@
 
         </div>
         <!-- displayed time & date  -->
-        <h2 class="has-text-black has-text-weight-bold" id="date"></h2>
-        <p id="currentDay " class="lead "></p>
+        <h2 class="has-text-black has-text-weight-bold is-size-3 has-text-centered" id="date"></h2>
+        <p id="currentDay"></p>
+        <!-- med. cards schedule -->
   </header>
   <div class="container">
+    <section class="columns">
+      <div class="card column is-one-quarter is-multiline mt-5">
+        <header class="card-header">
+          <p class="card-header-title has-background-primary has-text-black has-text-centered">
+            MORNING MEDICATIONS
+          </p>
+        </header>
+        </header>
+        <div class=" card-content">
+          <div class="content">
+            <h2 class="has-text-centered">6:00 AM</h2>
+            <ul class="has-text-left">
+              <li>Omeprazole</li>
+              <li>Insulin</li>
+              <li>Zrytec</li>
+            </ul>
+            <p class="has-text-danger has-text-weight-bold"> Take 1 Omeprazole and check your blood sugar 30 mins.
+              BEFORE
+              eating.<br /><br />
+              Take Zrytec if you're having allergies</p>
+            <img alt="beetus-icon" src="./2nd-page-assets/images/beetus-icon.png">
+          </div>
+        </div>
+      </div>
 
-    <ul id="list">
+      <div class="card column is-one-quarter is-multiline mt-5">
+        <header class="card-header">
+          <p class="card-header-title has-background-primary has-text-black">
+            AFTERNOON MEDICATIONS
+          </p>
+          </p>
+        </header>
+        </header>
+        <div class="card-content">
+          <div class="content">
+            <h2 class="has-text-centered">12:00 PM</h2>
+            <ul class="has-text-left">
+              <li>Tylenol</li>
+              <li>Nebulizer</li>
+              <li>Enalapril</li>
+            </ul>
+            <p class="has-text-danger has-text-weight-bold"> Take 2 Tylenol if you're having any mild pain. <br /><br />
+              Check your blood pressure-Take 1 Enalapril. <br /><br />
+              Do your Nebulizer if you're short of breath. </p>
+            <img alt="breath-icon" src="./2nd-page-assets/images/breath-icon.png">
+          </div>
+        </div>
+      </div>
+      <div class=" card column is-one-quarter is-multiline mt-5">
+        <header class="card-header">
+          <p class="card-header-title has-background-primary has-text-black">
+            EVENING MEDICATIONS
+          </p>
+        </header>
+        <div class="card-content">
+          <div class="content">
+            <h2 class="has-text-centered">8:00 PM</h2>
+            <ul class="has-text-left">
+              <li>Insulin</li>
+              <li>Enalapril</li>
+              <li>Melatonin</li>
+            </ul>
+            <p class="has-text-danger has-text-weight-bold"> Check your blood sugar<br />
+              Check your blood pressure-Take 1 Enalapril. <br /><br />
+              Take 1 Melatonin if you aren't sleepy. </p>
+            <img alt="sleepy-icon" src="./2nd-page-assets/images/sleepy-icon.png">
 
-    </ul>
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
-    <script src="./2nd-page-assets/meds.js">
+            <P class="has-text-centered has-text-danger-dark ">**Enalapril can affect your heart or your electrolyte
+              levels.
+              Call your
+              doctor
+              if you have chest pain**</P>
+          </div>
+        </div>
+      </div>
 
-    </script>
+      <div class="card column is-one-quarter is-multiline mt-5">
+        <header class="card-header">
+
+          <p class="card-header-title has-background-primary has-text-black">
+            DAILY COVID-19 TOTALS IN THE USA
+          </p>
+        </header>
+        <div class="card-content">
+          <div class="content">
+            <p class="pb-5 has-text-centered has-text-weight-bold is-size-4"><br /><br /><img alt="wash-icon"
+                src="./2nd-page-assets/images/wash-icon.png">WASH
+              YOUR
+              HANDS OFTEN! <br /> <br />WEAR A MASK!<img alt="mask-icon" src="./2nd-page-assets/images/mask-icon.png">
+            </p>
+
+            <section class="section is-size-5">
+              <h1 id="unitedStates" style="color: black;"></h1>
+              <h4 id="newConfirmed" style="color: black;"></h4>
+              <h3 id=newRecovered" style="color: black;">
+                </h4>
+                <h4 id="totalDeaths" style="color: black;"></h4>
+                <img alt="rona-icon" src="./2nd-page-assets/images/rona-icon.png">
+                <!-- <div class="card">
+                <h3 class="card-header is-size-4">Search By City</h3>
+                <form class="card-body">
+                  <label class="form-label"></label>
+                  <input id="cityname" type="text" autofocus="true" class="form-input" />
+                  <button type="submit" id="search-btn">Search</button>
+              </div> -->
+            </section>
+          </div>
+
+          <ul id="list">
+
+          </ul>
+          <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+          <script src=""></script>
+          <script src="./2nd-page-assets/meds.js">
+
+          </script>
 </body>
 <div>
   <footer>
