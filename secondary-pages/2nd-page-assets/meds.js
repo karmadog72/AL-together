@@ -1,9 +1,9 @@
 var today = moment().format("MMMM Do YYYY, h:mm:ss a");
 var displayDate = (document.getElementById("date").innerHTML = today);
 var searchBtn = document.getElementById("search-btn");
-var newConfirmed = document.getElementById("newConfirmed");
+var confirmed = document.getElementById("newConfirmed");
 var newRecovered = document.getElementById("newRecovered");
-var totalDeaths = document.getElementById("totalDeaths");
+var deaths = document.getElementById("totalDeaths");
 var lat;
 var lon;
 var unitedStates = document.getElementById("unitedStates");
@@ -38,30 +38,31 @@ var loadTimeBlock = function (i) {
   }
 };
 
-function getForescast(e) {
-  e.preventDefault();
+function getForecast(e) {
+  // e.preventDefault();
   var unitedStates = document.getElementById("unitedStates").value;
-  var apiUrl = `https://api.covid19api.com/total/${country}/${unitedStates}`;
+  var apiUrl = "https://covid19.mathdro.id/api/countries/USA";
   fetch(apiUrl)
     .then(function (response) {
       return response.json();
     })
     .then(function (data) {
       console.log(data);
-      console.log("unitedStates is:", data.main.unitedStates);
-      console.log("confirmed is:", data.main.newConfirmed);
-      console.log("recovered is:", data.main.newRecovered);
-      console.log("Deaths is:", data.totalDeaths);
+      // console.log("unitedStates is:", data.main.unitedStates);
+      console.log("confirmed is:", data.confirmed.value);
+      // console.log("recovered is:", data.main.newRecovered);
+      console.log("Deaths is:", data.deaths.value);
 
-      unitedStates.textContent = "Country-" + data.name;
-      confirmed.textContent = "Confirmed Cases" + data.main.newConfirmed;
-      recovered.textContent = "Recovered" + data.main.newRecovered;
-      deaths.textContent = "Deaths" + data.totalDeaths;
-      lat = data.coord.lat;
-      lon = data.coord.lon;
-      getForecast();
+      // unitedStates.textContent = "Country-" + data.name;
+      confirmed.textContent =
+        " Total Confirmed Cases 😷 -" + data.confirmed.value;
+      // recovered.textContent = "Recovered" + data.main.newRecovered;
+      deaths.textContent = "Total Deaths 💀-" + data.deaths.value;
+      // lat = data.coord.lat;
+      // lon = data.coord.lon;
     });
 }
+getForecast();
 document.getElementById("unitedStates").value = "";
 
-searchBtn.addEventListener("click", getForescast);
+// searchBtn.addEventListener("click", getForecast);
