@@ -6,6 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+  <link rel="stylesheet" href="./assets/style.css">
   <title>Al-Together</title>
 </head>
 
@@ -76,19 +77,17 @@
         <h3 id="uvi" style="color: black;"></h3>
       </section>
       <!-- search area -->
-      <main class="flex-row justify-space-between">
-        <div class="col-12 col-md-4">
+      <main class="columns">
+        <div class="column is-half is-offset-one-quarter">
           <!-- search field and Btns go here -->
-          <div class="card">
-            <h3 class="card-header text-uppercase">Search Weather by City</h3>
+      
+            <h3 class="subtitle is-3 has-text-centered">Search Weather by City</h3>
             <form id="user-form" class="card-body">
               <label class="form-label"></label>
               <input name="username" id="cityname" type="text" autofocus="true" class="form-input" />
               <button type="submit" id="search-btn">Search</button>
-
           </div>
       </main>
-    </div>
   </section>
   <section class="columns">
     <div class="card column is-one-quarter is-multiline mt-5">
