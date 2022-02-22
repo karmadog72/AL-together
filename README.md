@@ -1,4 +1,5 @@
 # AL-together
+https://lannylopez.github.io/AL-together/
 
 Hello with this project our group has tackled the mission of helping people with memory loss using a website 
 
