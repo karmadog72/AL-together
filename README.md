@@ -1,6 +1,9 @@
 # AL-together
 https://lannylopez.github.io/AL-together/
 
+![image](https://user-images.githubusercontent.com/89046934/167981112-a18ad7c1-58e4-473d-bf67-159f78577d99.png)
+
+
 Hello with this project our group has tackled the mission of helping people with memory loss using a website 
 
 With the website you can have it help you with all types of daily task such as If you've eaten, If you've done all your daily hygiene routines, Which meds to take at which times, And a contact list of important people in your life that help take care of you.
